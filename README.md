@@ -1,4 +1,5 @@
 <img width="723" alt="capture" src="https://user-images.githubusercontent.com/27961735/41251216-e26c008c-6dd6-11e8-9a08-0bb912f87822.PNG">
+
 # Secret-Code-Generator
 Secret Code Generator is a Web-Application that can compress your text and comvert to secret messages. You can even decode it to retrieve back the original message. This can be use to send messages confidentially.
 
