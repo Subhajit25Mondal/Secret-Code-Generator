@@ -27,8 +27,8 @@
     $qw = $_POST['query'];
     
     
- $con = mysqli_connect("localhost","root","");
-mysqli_select_db($con,"secret_code");
+ $con = mysqli_connect("","","");
+mysqli_select_db($con,"");
 
 
 

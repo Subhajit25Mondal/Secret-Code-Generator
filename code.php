@@ -27,8 +27,8 @@
     $qw = $_POST['query'];
     
     
- $con = mysqli_connect("localhost","root","");
-mysqli_select_db($con,"secret_code");
+ $con = mysqli_connect("","","");
+mysqli_select_db($con,"");
 
 $a=array("rfj","acx","auk","znd","dzi","plj","ygh","rcv","bcx","zaq","any","tgf");
 $random=array_rand($a,2);
@@ -38,15 +38,15 @@ $per=$a[$random[0]];
 
 
 
-$rowSQL = mysqli_query( $con, "SELECT MAX( id ) AS max FROM main;" );               //MAX VALUE FROM TABLE
+$rowSQL = mysqli_query( $con, "SELECT MAX( id ) AS max FROM main;" );               
 $row = mysqli_fetch_array( $rowSQL );
 $largestNumber = $row['max'];
 
 
-$code=$per.($largestNumber+1);                                                     //MAKING CODE
+$code=$per.($largestNumber+1);                                                     
 
 
-date_default_timezone_set('Asia/Kolkata');                                          //TIME
+date_default_timezone_set('Asia/Kolkata');                                          
 
 $timestamp = time();
 $date_time = date("d-m-Y (D) H:i:s", $timestamp);
